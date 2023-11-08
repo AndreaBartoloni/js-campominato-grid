@@ -1,5 +1,7 @@
 :root {
     --num-cells-per-row: 10;
+    --num-cells-per-row81: 9;
+    --num-cells-per-row49: 7;
 }
 
 * {
@@ -9,9 +11,10 @@
 }
 
 body {
-    background: #222;
+    background: cyan;
     color: rgb(0, 0, 0);
     font-family: sans-serif;
+    height: 100vh;
 }
 .container{
     
@@ -46,14 +49,34 @@ button{
     margin: 0 auto;
     height: 600px;
     width: 600px;
+    margin-top: 80px;
 }
 
 .square {
-    border: white solid 1px;
+    border: black solid 2px;
     height: calc(100% / var(--num-cells-per-row) );
     width: calc(100% / var(--num-cells-per-row) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square81 {
+    border: black solid 2px;
+    height: calc(100% / var(--num-cells-per-row81) );
+    width: calc(100% / var(--num-cells-per-row81) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square49 {
+    border: black solid 2px;
+    height: calc(100% / var(--num-cells-per-row49) );
+    width: calc(100% / var(--num-cells-per-row49) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .highlight {
-    background: cyan;
+    background-color: blue;
 }
